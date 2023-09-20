@@ -3,7 +3,9 @@ sudo apt update
 sudo apt upgrade
 
 # Install tools
-sudo apt install vim curl
+sudo apt install vim host pigz apt-transport-https software-properties-common curl gpg samba samba-common smbclient cifs-utils
+
+mkdir -p /usr/local/share/keyrings
 
 # Update Hostname
 sudo hostnamectl set-hostname opsi-server
