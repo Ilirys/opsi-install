@@ -3,7 +3,7 @@ sudo apt update
 sudo apt upgrade
 
 # Install tools
-sudo apt install vim
+sudo apt install vim curl
 
 # Update Hostname
 sudo hostnamectl set-hostname opsi-server
