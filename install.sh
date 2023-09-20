@@ -10,7 +10,7 @@ sudo hostnamectl set-hostname opsi-server
 hostname
 
 # Update FQDN
-sudo echo "$(hostname -I) opsi.insa-cvl.fr opsi-server" > /etc/hosts
+echo "$(hostname -I) opsi.insa-cvl.fr opsi-server" | sudo tee -a /etc/hosts
 hostname --fqdn
 
 # Check
