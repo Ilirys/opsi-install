@@ -73,3 +73,10 @@ sudo opsi-package-updater -v install
 
 # Install Opsi (maybe, we need to gain access to the repository)
 sudo opsi-package-manager --install /var/lib/opsi/repository/*.opsi
+
+
+wget https://download.uib.de/opsi4.2/boot-cd/opsi4.2.0-client-boot-cd_20230913.iso
+
+sudo opsi-package-updater -v install opsi-winpe
+
+wget https://download.uib.de/4.2/experimental/opsiconfd-addons/opsi-webgui_4.2.23.zip
