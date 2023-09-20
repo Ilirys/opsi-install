@@ -33,6 +33,7 @@ mkdir opsi
 cd opsi
 
 # Install using the GUI (because but we could try with CLI)
+sudo opsi-quickinstall/nogui/opsi_quick_install_project -n
 
 # Backend
 # Password is linux123
