@@ -18,7 +18,7 @@ getent hosts $(hostname -f)
 
 # Update locales
 sudo locale-gen en_GB.UTF-8
-update-locale LANG=en_GB.UTF-8
+sudo update-locale LANG=en_GB.UTF-8
 
 # Update Opensuse Registry
 REPO_URL=https://download.opensuse.org/repositories/home:/uibmz:/opsi:/4.2:/stable/xUbuntu_22.04
