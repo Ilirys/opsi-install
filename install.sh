@@ -23,7 +23,7 @@ update-locale LANG=en_GB.UTF-8
 # Update Opensuse Registry
 REPO_URL=https://download.opensuse.org/repositories/home:/uibmz:/opsi:/4.2:/stable/xUbuntu_22.04
 REPO_KEY=/usr/local/share/keyrings/opsi.gpg
-sudo echo "deb [signed-by=${REPO_KEY}] ${REPO_URL}/ /" > /etc/apt/sources.list.d/opsi.list
+sudo echo "deb [signed-by=${REPO_KEY}] ${REPO_URL}/ /" > sudo /etc/apt/sources.list.d/opsi.list
 sudo curl -fsSL ${REPO_URL}/Release.key | gpg --dearmor | sudo tee ${REPO_KEY} > /dev/null
 
 cd ~
