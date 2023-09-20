@@ -64,7 +64,10 @@ sudo getent group opsifileadmins
 sudo opsi-setup --patch-sudoers-file
 sudo opsi-set-rights .
 
-# Install Opsi Package
+# Install Opsi Package (and it could be long)
 sudo opsi-package-updater -v install
 # Update Opsi Package
 # sudo opsi-package-updater -v update
+
+# Install Opsi (maybe, we need to gain access to the repository)
+sudo opsi-package-manager --install /var/lib/opsi/repository/*.opsi
