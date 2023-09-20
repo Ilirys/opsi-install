@@ -53,8 +53,8 @@ opsi-admin -d task setPcpatchPassword
 
 # Users and Groups
 useradd -m -s /bin/bash adminuser
-passwd adminuser
-smbpasswd -a adminuser
+sudo passwd adminuser
+sudo smbpasswd -a adminuser
 
 usermod -aG opsiadmin adminuser
 # Check
