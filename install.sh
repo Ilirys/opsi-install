@@ -6,7 +6,7 @@ sudo apt upgrade
 sudo apt install vim
 
 # Update Hostname
-sudo hostnamectl set-hostname linuxconfig
+sudo hostnamectl set-hostname opsi-server
 hostname
 
 # Update FQDN
