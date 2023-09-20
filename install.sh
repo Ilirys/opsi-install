@@ -33,6 +33,9 @@ mkdir opsi
 cd opsi
 
 # Install using the GUI (because but we could try with CLI)
+wget https://download.uib.de/opsi4.2/stable/quickinstall/opsi-quick-install.zip
+unzip opsi-quick-install.zip
+
 
 # Backend
 # Password is linux123
