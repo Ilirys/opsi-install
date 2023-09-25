@@ -81,6 +81,7 @@ sudo opsi-package-updater -v install opsi-winpe
 
 wget https://download.uib.de/4.2/experimental/opsiconfd-addons/opsi-webgui_4.2.23.zip
 
+# Install a DHCP if none are present in the network
 apt install isc-dhcp-server
 opsi-setup --auto-configure-dhcpd
 opsi-setup --patch-sudoers-file
