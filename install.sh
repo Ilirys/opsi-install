@@ -5,7 +5,7 @@ sudo apt upgrade
 # Install tools
 sudo apt install vim host pigz apt-transport-https software-properties-common curl gpg samba samba-common smbclient cifs-utils
 
-mkdir -p /usr/local/share/keyrings
+sudo mkdir -p /usr/local/share/keyrings
 
 # Update Hostname
 sudo hostnamectl set-hostname opsi-server
@@ -32,7 +32,9 @@ cd ~
 mkdir opsi
 cd opsi
 
-# Install using the GUI (because but we could try with CLI)
+# Install Opsi
+wget https://download.uib.de/opsi4.2/stable/quickinstall/opsi-quick-install.zip
+unzip opsi-quick-install.zip
 sudo opsi-quickinstall/nogui/opsi_quick_install_project -n
 
 # Backend
@@ -74,3 +76,10 @@ sudo opsi-package-updater -v install
 
 # Install Opsi (maybe, we need to gain access to the repository)
 sudo opsi-package-manager --install /var/lib/opsi/repository/*.opsi
+
+
+wget https://download.uib.de/opsi4.2/boot-cd/opsi4.2.0-client-boot-cd_20230913.iso
+
+sudo opsi-package-updater -v install opsi-winpe
+
+wget https://download.uib.de/4.2/experimental/opsiconfd-addons/opsi-webgui_4.2.23.zip

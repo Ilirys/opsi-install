@@ -1,0 +1,29 @@
+[Package]
+version: 1
+depends: 
+incremental: False
+
+[Product]
+type: localboot
+id: firefox_prof
+name: firefox_prof
+description: Please ad a valuable description.
+advice: 
+version: 1.0
+priority: 0
+licenseRequired: False
+productClasses: 
+setupScript: 
+uninstallScript: 
+updateScript: 
+alwaysScript: 
+onceScript: 
+customScript: 
+userLoginScript: 
+
+[Changelog]
+firefox_prof (1.0-1) stable; urgency=low
+
+Project created with opsi Package Builder 8.5.0
+
+ --  <>  Fri, 22 Sep 2023 14:26:59 +0000
