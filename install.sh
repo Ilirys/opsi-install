@@ -83,3 +83,4 @@ wget https://download.uib.de/opsi4.2/boot-cd/opsi4.2.0-client-boot-cd_20230913.i
 sudo opsi-package-updater -v install opsi-winpe
 
 wget https://download.uib.de/4.2/experimental/opsiconfd-addons/opsi-webgui_4.2.23.zip
+# Add add-on in Addons pannel in website
