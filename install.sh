@@ -52,7 +52,7 @@ sudo opsi-setup --auto-configure-samba
 sudo systemctl restart smbd.service
 sudo systemctl restart nmbd.service
 
-opsi-admin -d task setPcpatchPassword
+sudo opsi-admin -d task setPcpatchPassword
 
 # Users and Groups
 useradd -m -s /bin/bash adminuser
