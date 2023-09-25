@@ -59,7 +59,7 @@ useradd -m -s /bin/bash adminuser
 passwd adminuser
 smbpasswd -a adminuser
 
-usermod -aG opsiadmin adminuser
+sudo usermod -aG opsiadmin adminuser
 # Check
 getent group opsiadmin
 
@@ -74,7 +74,7 @@ sudo opsi-package-updater -v install
 # Update Opsi Package
 # sudo opsi-package-updater -v update
 
-# Install Opsi (maybe, we need to gain access to the repository)
+# Install Opsi (maybe, we need to gain access to the repository) in root
 sudo opsi-package-manager --install /var/lib/opsi/repository/*.opsi
 
 
